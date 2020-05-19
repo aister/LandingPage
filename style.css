@@ -1,0 +1,142 @@
+:root {
+  --main-color: #78afdd;
+}
+body {
+  font-family: "Itim", cursive;
+  background: #e6f3fd;
+  margin: 0;
+  color: #565656;
+}
+.center {
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+.line {
+  border-bottom: 3px solid;
+  border-color: var(--main-color);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#main {
+  width: 1000px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  margin: 40px 0;
+}
+.content > div {
+  padding: 10px;
+}
+h1 {
+  font-size: 20px;
+  background: var(--main-color);
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.logo {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.col1 { display: block }
+.col5050 > div { width: 50%; }
+.col6040 > div:nth-child(1) { width: 60%; }
+.col6040 > div:nth-child(2) { width: 40%; }
+.col3 > div { width: 33%; }
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galleryItem {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.galleryBG {
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryBG:nth-child(1) { background-image: url('img/main1.jpg'); }
+.galleryBG:nth-child(2) { background-image: url('img/main1.jpg'); }
+.galleryBG:nth-child(3) { background-image: url('img/main1.jpg'); }
+.galleryBG:nth-child(4) { background-image: url('img/main1.jpg'); }
+.galleryBG:nth-child(5) { background-image: url('img/main1.jpg'); }
+
+.galleryItemContainer {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+}
+.galleryHeading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.feedbackItem {
+  display: flex;
+}
+.feedbackImg {
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.feedbackImgContainer {
+  width: 10%;
+}
+.feedbackImg:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.feedbackArrow {
+  width: 0; 
+  height: 0; 
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid white;
+  margin-top: 20px;
+}
+.feedbackItem:nth-child(odd) .feedbackArrow {
+  border-right: 0;
+  border-left: 20px solid white;
+  order: 2;
+}
+.feedbackItem:nth-child(odd) .feedbackImgContainer {
+  order: 3;
+}
+.feedbackDesc {
+  order: 1;
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  width: 90%;
+}
+
+.feedbackItem:nth-child(1) .feedbackImg { background-image: url('img/main1.jpg'); }
+.feedbackItem:nth-child(2) .feedbackImg { background-image: url('img/main1.jpg'); }
+.feedbackItem:nth-child(3) .feedbackImg { background-image: url('img/main1.jpg'); }
+.feedbackItem:nth-child(4) .feedbackImg { background-image: url('img/main1.jpg'); }
+.feedbackItem:nth-child(5) .feedbackImg { background-image: url('img/main1.jpg'); }
+
+.author {
+  text-align: right;
+}
+.mainImg {
+  width: 100%;
+}
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Itim'), local('Itim-Regular'), url(https://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYe8A1AkP7Z.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
